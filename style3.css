@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.item {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    min-height: 50px;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: 100%;
+}
+
+/* Top row */
+.row-top .item {
+    height: 100px;
+}
+
+/* Middle row */
+.wide-bar {
+    height: 50px;
+}
+
+.big-box {
+    height: 120px;
+}
+
+.wide-box-middle {
+    min-height: 170px;
+}
+
+/* Bottom row */
+.wide-box-bottom,
+.small-box-bottom {
+    min-height: 170px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: 100px;
+    }
+
+    .item {
+        height: auto;
+    }
+}

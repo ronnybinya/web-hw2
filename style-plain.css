@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* מסגרת חיצונית */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 4px solid red;
+  padding: 10px;
+  overflow: hidden; /* מנקה float של העמודות */
+}
+
+/* כל המלבנים */
+.item {
+  border: 4px solid red;
+  background: #fff;
+}
+
+/* עמודה שמאלית */
+.sidebar {
+  float: left;
+  width: 18%;
+  height: 420px;
+}
+
+/* אזור תוכן ימני */
+.main-content {
+  float: right;
+  width: 80%;
+}
+
+/* שורות */
+.row {
+  overflow: hidden;   /* מנקה floats בתוך השורה */
+  margin-bottom: 12px;
+}
+
+/* שורה עליונה: 4 קופסאות */
+.row-top .box {
+  float: left;
+  width: 23.5%;
+  height: 90px;
+  margin-right: 2%;
+}
+
+.row-top .box:last-child {
+  margin-right: 0;
+}
+
+/* שורה אמצעית */
+.column-left {
+  float: left;
+  width: 48%;
+}
+
+.wide-box-middle {
+  float: right;
+  width: 48%;
+  height: 200px;
+}
+
+/* 5: פס רחב קטן */
+.wide-bar {
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+/* 6: קופסה חצי-רוחב */
+.big-box {
+  height: 90px;
+}
+
+/* שורה תחתונה */
+.wide-box-bottom {
+  float: left;
+  width: 65%;
+  height: 120px;
+}
+
+.small-box-bottom {
+  float: right;
+  width: 33%;
+  height: 120px;
+}
+
+/* 📱 רספונסיביות */
+@media (max-width: 750px) {
+  .sidebar,
+  .main-content,
+  .row-top .box,
+  .column-left,
+  .wide-box-middle,
+  .wide-box-bottom,
+  .small-box-bottom {
+    float: none;
+    width:

@@ -1,0 +1,55 @@
+<!--
+Create a responsive HTML page using plain CSS only (no flex, no bootstrap).
+The layout should include:
+- A left vertical column
+- A right main area
+- A top row with 4 equal boxes
+- Two half-width boxes below
+- Another half-width box
+- A bottom row with one wide box and one small box
+Use float and percentage widths.
+Add a media query so that below 750px all boxes stack vertically.
+Add red borders to all boxes.
+-->
+
+<!doctype html>
+<html lang="he" dir="rtl">  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain CSS Layout - Part B Section 2</title>
+    <link rel="stylesheet" href="style-plain.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar item">Sidebar</div>
+
+        <div class="main-content">
+            
+            <div class="row row-top">
+                <div class="item box">1</div>
+                <div class="item box">2</div>
+                <div class="item box">3</div>
+                <div class="item box">4</div>
+            </div>
+
+            <div class="row row-middle">
+                <div class="column-left">
+                    <div class="item wide-bar">5</div>
+                    <div class="item big-box">6</div>
+                </div>
+                <div class="item middle-right wide-box-middle">7</div>
+            </div>
+
+            <div class="row row-bottom">
+                <div class="item wide-box-bottom">8</div>
+                <div class="item small-box-bottom">9</div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+
